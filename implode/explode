@@ -1,0 +1,11 @@
+//implode
+<input type="text" name="find_category[]" />
+$findCategory = $_POST['find_category'];
+$cols = implode('-',$findCategory);
+
+
+//explode
+$findFeeCollect = '1-2-4-5';
+$pizza = explode('-', $findFeeCollect);
+
+for ($k = 0 ; $k < $countfeeIds; $k++){ echo $pizza[$k].'<br/>'; }
